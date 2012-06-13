@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		792E98AF0F19D29A00FDE105 /* cartwheel in Resources */ = {isa = PBXBuildFile; fileRef = 792E98AE0F19D29A00FDE105 /* cartwheel */; };
+		797EE27A0F19703700E750F2 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 797EE2790F19703700E750F2 /* Application.m */; };
+		798297D80F195DFD0053C3CC /* PenroseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297C60F195DFD0053C3CC /* PenroseAppDelegate.m */; };
+		798297D90F195DFD0053C3CC /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297CB0F195DFD0053C3CC /* Palette.m */; };
+		798297DA0F195DFD0053C3CC /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297CE0F195DFD0053C3CC /* Window.m */; };
+		798297DB0F195DFD0053C3CC /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D00F195DFD0053C3CC /* StartViewController.m */; };
+		798297DC0F195DFD0053C3CC /* ImageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D10F195DFD0053C3CC /* ImageMaker.m */; };
+		798297DD0F195DFD0053C3CC /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D20F195DFD0053C3CC /* Plane.m */; };
+		798297DE0F195DFD0053C3CC /* geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D30F195DFD0053C3CC /* geometry.m */; };
+		798297DF0F195DFD0053C3CC /* Tiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D50F195DFD0053C3CC /* Tiles.m */; };
+		798297E00F195DFD0053C3CC /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297D70F195DFD0053C3CC /* Tile.m */; };
+		798297E20F195E0A0053C3CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 798297E10F195E0A0053C3CC /* main.m */; };
+		7982982B0F195E280053C3CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7982982A0F195E280053C3CC /* AudioToolbox.framework */; };
+		798298430F195E3A0053C3CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7982982C0F195E3A0053C3CC /* MainWindow.xib */; };
+		798298440F195E3A0053C3CC /* StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7982982D0F195E3A0053C3CC /* StartView.xib */; };
+		798298450F195E3A0053C3CC /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = 7982982E0F195E3A0053C3CC /* tap.aif */; };
+		798298460F195E3A0053C3CC /* tock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7982982F0F195E3A0053C3CC /* tock.wav */; };
+		798298470F195E3A0053C3CC /* presets.png in Resources */ = {isa = PBXBuildFile; fileRef = 798298300F195E3A0053C3CC /* presets.png */; };
+		798298480F195E3A0053C3CC /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 798298310F195E3A0053C3CC /* tick.wav */; };
+		798298490F195E3A0053C3CC /* negative.wav in Resources */ = {isa = PBXBuildFile; fileRef = 798298320F195E3A0053C3CC /* negative.wav */; };
+		7982984A0F195E3A0053C3CC /* palettes in Resources */ = {isa = PBXBuildFile; fileRef = 798298330F195E3A0053C3CC /* palettes */; };
+		7982984B0F195E3A0053C3CC /* select.caf in Resources */ = {isa = PBXBuildFile; fileRef = 798298340F195E3A0053C3CC /* select.caf */; };
+		7982984C0F195E3A0053C3CC /* erase.caf in Resources */ = {isa = PBXBuildFile; fileRef = 798298350F195E3A0053C3CC /* erase.caf */; };
+		7982984D0F195E3A0053C3CC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 798298360F195E3A0053C3CC /* Icon.png */; };
+		7982984E0F195E3A0053C3CC /* Deuce in Resources */ = {isa = PBXBuildFile; fileRef = 798298370F195E3A0053C3CC /* Deuce */; };
+		7982984F0F195E3A0053C3CC /* Queen in Resources */ = {isa = PBXBuildFile; fileRef = 798298380F195E3A0053C3CC /* Queen */; };
+		798298500F195E3A0053C3CC /* Jack in Resources */ = {isa = PBXBuildFile; fileRef = 798298390F195E3A0053C3CC /* Jack */; };
+		798298510F195E3A0053C3CC /* Sun in Resources */ = {isa = PBXBuildFile; fileRef = 7982983A0F195E3A0053C3CC /* Sun */; };
+		798298520F195E3A0053C3CC /* Star in Resources */ = {isa = PBXBuildFile; fileRef = 7982983B0F195E3A0053C3CC /* Star */; };
+		798298530F195E3A0053C3CC /* Batman in Resources */ = {isa = PBXBuildFile; fileRef = 7982983C0F195E3A0053C3CC /* Batman */; };
+		798298540F195E3A0053C3CC /* Ace in Resources */ = {isa = PBXBuildFile; fileRef = 7982983D0F195E3A0053C3CC /* Ace */; };
+		798298550F195E3A0053C3CC /* King in Resources */ = {isa = PBXBuildFile; fileRef = 7982983E0F195E3A0053C3CC /* King */; };
+		798298560F195E3A0053C3CC /* photo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7982983F0F195E3A0053C3CC /* photo.wav */; };
+		798298570F195E3A0053C3CC /* rhombuses.png in Resources */ = {isa = PBXBuildFile; fileRef = 798298400F195E3A0053C3CC /* rhombuses.png */; };
+		798298580F195E3A0053C3CC /* kitesanddarts.png in Resources */ = {isa = PBXBuildFile; fileRef = 798298410F195E3A0053C3CC /* kitesanddarts.png */; };
+		798298590F195E3A0053C3CC /* toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 798298420F195E3A0053C3CC /* toolbar.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Tilework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32CA4F630368D1EE00C91783 /* Tilework_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tilework_Prefix.pch; sourceTree = "<group>"; };
+		792E98AE0F19D29A00FDE105 /* cartwheel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cartwheel; sourceTree = "<group>"; };
+		797EE2780F19703700E750F2 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		797EE2790F19703700E750F2 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		798297C50F195DFD0053C3CC /* PenroseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PenroseAppDelegate.h; sourceTree = "<group>"; };
+		798297C60F195DFD0053C3CC /* PenroseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PenroseAppDelegate.m; sourceTree = "<group>"; };
+		798297C70F195DFD0053C3CC /* insist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insist.h; sourceTree = "<group>"; };
+		798297C80F195DFD0053C3CC /* geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		798297C90F195DFD0053C3CC /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		798297CA0F195DFD0053C3CC /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		798297CB0F195DFD0053C3CC /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
+		798297CC0F195DFD0053C3CC /* ImageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMaker.h; sourceTree = "<group>"; };
+		798297CD0F195DFD0053C3CC /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		798297CE0F195DFD0053C3CC /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
+		798297CF0F195DFD0053C3CC /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		798297D00F195DFD0053C3CC /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		798297D10F195DFD0053C3CC /* ImageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMaker.m; sourceTree = "<group>"; };
+		798297D20F195DFD0053C3CC /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
+		798297D30F195DFD0053C3CC /* geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = geometry.m; sourceTree = "<group>"; };
+		798297D40F195DFD0053C3CC /* Tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiles.h; sourceTree = "<group>"; };
+		798297D50F195DFD0053C3CC /* Tiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiles.m; sourceTree = "<group>"; };
+		798297D60F195DFD0053C3CC /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		798297D70F195DFD0053C3CC /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		798297E10F195E0A0053C3CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7982982A0F195E280053C3CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7982982C0F195E3A0053C3CC /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		7982982D0F195E3A0053C3CC /* StartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartView.xib; sourceTree = "<group>"; };
+		7982982E0F195E3A0053C3CC /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
+		7982982F0F195E3A0053C3CC /* tock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tock.wav; sourceTree = "<group>"; };
+		798298300F195E3A0053C3CC /* presets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = presets.png; sourceTree = "<group>"; };
+		798298310F195E3A0053C3CC /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
+		798298320F195E3A0053C3CC /* negative.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = negative.wav; sourceTree = "<group>"; };
+		798298330F195E3A0053C3CC /* palettes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = palettes; sourceTree = "<group>"; };
+		798298340F195E3A0053C3CC /* select.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = select.caf; sourceTree = "<group>"; };
+		798298350F195E3A0053C3CC /* erase.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = erase.caf; sourceTree = "<group>"; };
+		798298360F195E3A0053C3CC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		798298370F195E3A0053C3CC /* Deuce */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deuce; sourceTree = "<group>"; };
+		798298380F195E3A0053C3CC /* Queen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queen; sourceTree = "<group>"; };
+		798298390F195E3A0053C3CC /* Jack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jack; sourceTree = "<group>"; };
+		7982983A0F195E3A0053C3CC /* Sun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sun; sourceTree = "<group>"; };
+		7982983B0F195E3A0053C3CC /* Star */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Star; sourceTree = "<group>"; };
+		7982983C0F195E3A0053C3CC /* Batman */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Batman; sourceTree = "<group>"; };
+		7982983D0F195E3A0053C3CC /* Ace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ace; sourceTree = "<group>"; };
+		7982983E0F195E3A0053C3CC /* King */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = King; sourceTree = "<group>"; };
+		7982983F0F195E3A0053C3CC /* photo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = photo.wav; sourceTree = "<group>"; };
+		798298400F195E3A0053C3CC /* rhombuses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rhombuses.png; sourceTree = "<group>"; };
+		798298410F195E3A0053C3CC /* kitesanddarts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitesanddarts.png; sourceTree = "<group>"; };
+		798298420F195E3A0053C3CC /* toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar.png; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				7982982B0F195E280053C3CC /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				798297C50F195DFD0053C3CC /* PenroseAppDelegate.h */,
+				798297C60F195DFD0053C3CC /* PenroseAppDelegate.m */,
+				798297C70F195DFD0053C3CC /* insist.h */,
+				797EE2780F19703700E750F2 /* Application.h */,
+				797EE2790F19703700E750F2 /* Application.m */,
+				798297C80F195DFD0053C3CC /* geometry.h */,
+				798297C90F195DFD0053C3CC /* Plane.h */,
+				798297CA0F195DFD0053C3CC /* Palette.h */,
+				798297CB0F195DFD0053C3CC /* Palette.m */,
+				798297CC0F195DFD0053C3CC /* ImageMaker.h */,
+				798297CD0F195DFD0053C3CC /* Window.h */,
+				798297CE0F195DFD0053C3CC /* Window.m */,
+				798297CF0F195DFD0053C3CC /* StartViewController.h */,
+				798297D00F195DFD0053C3CC /* StartViewController.m */,
+				798297D10F195DFD0053C3CC /* ImageMaker.m */,
+				798297D20F195DFD0053C3CC /* Plane.m */,
+				798297D30F195DFD0053C3CC /* geometry.m */,
+				798297D40F195DFD0053C3CC /* Tiles.h */,
+				798297D50F195DFD0053C3CC /* Tiles.m */,
+				798297D60F195DFD0053C3CC /* Tile.h */,
+				798297D70F195DFD0053C3CC /* Tile.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Tilework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Tilework_Prefix.pch */,
+				798297E10F195E0A0053C3CC /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7982982C0F195E3A0053C3CC /* MainWindow.xib */,
+				7982982D0F195E3A0053C3CC /* StartView.xib */,
+				7982982E0F195E3A0053C3CC /* tap.aif */,
+				792E98AE0F19D29A00FDE105 /* cartwheel */,
+				7982982F0F195E3A0053C3CC /* tock.wav */,
+				798298300F195E3A0053C3CC /* presets.png */,
+				798298310F195E3A0053C3CC /* tick.wav */,
+				798298320F195E3A0053C3CC /* negative.wav */,
+				798298330F195E3A0053C3CC /* palettes */,
+				798298340F195E3A0053C3CC /* select.caf */,
+				798298350F195E3A0053C3CC /* erase.caf */,
+				798298360F195E3A0053C3CC /* Icon.png */,
+				798298370F195E3A0053C3CC /* Deuce */,
+				798298380F195E3A0053C3CC /* Queen */,
+				798298390F195E3A0053C3CC /* Jack */,
+				7982983A0F195E3A0053C3CC /* Sun */,
+				7982983B0F195E3A0053C3CC /* Star */,
+				7982983C0F195E3A0053C3CC /* Batman */,
+				7982983D0F195E3A0053C3CC /* Ace */,
+				7982983E0F195E3A0053C3CC /* King */,
+				7982983F0F195E3A0053C3CC /* photo.wav */,
+				798298400F195E3A0053C3CC /* rhombuses.png */,
+				798298410F195E3A0053C3CC /* kitesanddarts.png */,
+				798298420F195E3A0053C3CC /* toolbar.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				7982982A0F195E280053C3CC /* AudioToolbox.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Tilework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tilework" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tilework;
+			productName = Tilework;
+			productReference = 1D6058910D05DD3D006BFB54 /* Tilework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tilework" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Tilework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798298430F195E3A0053C3CC /* MainWindow.xib in Resources */,
+				798298440F195E3A0053C3CC /* StartView.xib in Resources */,
+				798298450F195E3A0053C3CC /* tap.aif in Resources */,
+				798298460F195E3A0053C3CC /* tock.wav in Resources */,
+				798298470F195E3A0053C3CC /* presets.png in Resources */,
+				798298480F195E3A0053C3CC /* tick.wav in Resources */,
+				798298490F195E3A0053C3CC /* negative.wav in Resources */,
+				7982984A0F195E3A0053C3CC /* palettes in Resources */,
+				7982984B0F195E3A0053C3CC /* select.caf in Resources */,
+				7982984C0F195E3A0053C3CC /* erase.caf in Resources */,
+				7982984D0F195E3A0053C3CC /* Icon.png in Resources */,
+				7982984E0F195E3A0053C3CC /* Deuce in Resources */,
+				7982984F0F195E3A0053C3CC /* Queen in Resources */,
+				798298500F195E3A0053C3CC /* Jack in Resources */,
+				798298510F195E3A0053C3CC /* Sun in Resources */,
+				798298520F195E3A0053C3CC /* Star in Resources */,
+				798298530F195E3A0053C3CC /* Batman in Resources */,
+				798298540F195E3A0053C3CC /* Ace in Resources */,
+				798298550F195E3A0053C3CC /* King in Resources */,
+				798298560F195E3A0053C3CC /* photo.wav in Resources */,
+				798298570F195E3A0053C3CC /* rhombuses.png in Resources */,
+				798298580F195E3A0053C3CC /* kitesanddarts.png in Resources */,
+				798298590F195E3A0053C3CC /* toolbar.png in Resources */,
+				792E98AF0F19D29A00FDE105 /* cartwheel in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798297D80F195DFD0053C3CC /* PenroseAppDelegate.m in Sources */,
+				798297D90F195DFD0053C3CC /* Palette.m in Sources */,
+				798297DA0F195DFD0053C3CC /* Window.m in Sources */,
+				798297DB0F195DFD0053C3CC /* StartViewController.m in Sources */,
+				798297DC0F195DFD0053C3CC /* ImageMaker.m in Sources */,
+				798297DD0F195DFD0053C3CC /* Plane.m in Sources */,
+				798297DE0F195DFD0053C3CC /* geometry.m in Sources */,
+				798297DF0F195DFD0053C3CC /* Tiles.m in Sources */,
+				798297E00F195DFD0053C3CC /* Tile.m in Sources */,
+				798297E20F195E0A0053C3CC /* main.m in Sources */,
+				797EE27A0F19703700E750F2 /* Application.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tilework_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Tilework;
+				PROVISIONING_PROFILE = "B858D566-776A-498D-B401-019455A9CBFD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B858D566-776A-498D-B401-019455A9CBFD";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tilework_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Tilework;
+				PROVISIONING_PROFILE = "B858D566-776A-498D-B401-019455A9CBFD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B858D566-776A-498D-B401-019455A9CBFD";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		792560840F1AF44A005A2B4C /* distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: david finucane";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D98DD265-CF44-4216-96FD-E299F517D228";
+				SDKROOT = iphoneos2.1;
+			};
+			name = distribution;
+		};
+		792560850F1AF44A005A2B4C /* distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tilework_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Tilework;
+				PROVISIONING_PROFILE = "B858D566-776A-498D-B401-019455A9CBFD";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B858D566-776A-498D-B401-019455A9CBFD";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tilework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				792560850F1AF44A005A2B4C /* distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tilework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				792560840F1AF44A005A2B4C /* distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
